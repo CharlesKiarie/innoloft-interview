@@ -23,7 +23,7 @@ export default function HeaderNav() {
         <div className="ml-auto hidden md:block">
           <ul className="md:flex md:flex-wrap md:items-center md:justify-between md:gap-5 text-white">
             <li><NavLink className="font-medium text-white hover:underline hover:text-[#e4b302] aria-[current=page]:text-[#e4b302]" to="/">Home</NavLink></li>
-            <li><NavLink className="font-medium text-white hover:underline hover:text-[#e4b302] aria-[current=page]:text-[#e4b302]" to="/product/6781/">Product</NavLink></li>
+            <li><NavLink className="font-medium text-white hover:underline hover:text-[#e4b302] aria-[current=page]:text-[#e4b302]" to="/product">Product</NavLink></li>
             <li><RiChat3Line /></li>
             <li className="flex items-center gap-2">EN <RiArrowDownSLine /></li>
             <li><RiNotificationLine /></li>
