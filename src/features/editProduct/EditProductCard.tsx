@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { RiTrophyLine, RiDeleteBin2Line, RiCheckLine } from 'react-icons/ri'
 import { useEditProductMutation } from 'api/productAPI'
 import { useQuill } from 'react-quilljs'
-import 'quill/dist/quill.snow.css';
+import './quill.snow.css'
 import xss from 'xss'
 import { DataContext } from 'context/DataContext';
 
