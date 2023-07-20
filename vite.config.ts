@@ -14,13 +14,10 @@ export default defineConfig({
     include: ['**/test.{ts,tsx}']
   },
   build: {
-    rollupOptions: {
-      output: {
-        dir: 'dist',
-        format: 'iife',
-        name: 'MyModule'
-      },
-      plugins: [commonjs(), resolve()]
+    commonjsOptions: {
+      include: [
+        /node_modules/
+      ]
     }
   }
 })
