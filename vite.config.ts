@@ -16,7 +16,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        file: 'bundle.js',
+        dir: 'dist',
         format: 'iife',
         name: 'MyModule'
       },
