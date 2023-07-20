@@ -12,7 +12,6 @@ export default function App() {
         <DataProvider>
             <Routes>
                 <Route path="/" element={<Main />} />
-                <Route path="/product" element={<Product />} />
                 <Route path="/product/:id" element={<Product />} />
                 <Route path="/product/edit" element={<EditProduct />} />
                 <Route path="*" element={<NotFound />} />
