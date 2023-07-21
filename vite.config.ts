@@ -16,6 +16,12 @@ export default defineConfig({
   build: {
     commonjsOptions: {
       transformMixedEsModules: true
+    },
+    rollupOptions: {
+      external: [
+        "quill/dist/quill.snow.css"
+      ],
+      plugins: [resolve()]
     }
   }
 })
