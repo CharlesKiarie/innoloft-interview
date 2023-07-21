@@ -16,7 +16,7 @@ type Props = {
 export const DataContext = createContext({} as DataContext);
 
 export default function DataProvider({ children }: Props) {
-    const appID: number = import.meta.env.VITE_REACT_APP_ID ?? 1;
+    const appID: number = import.meta.env.VITE_APP_ID ?? 1;
     const { data: config } = useGetConfigQuery(appID);
     const { data: trlOptions } = useGetTRLQuery();
     const { data: product, isLoading, isError, } = useGetProductQuery();

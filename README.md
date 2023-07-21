@@ -1,5 +1,6 @@
 ## Getting Started
-
+Project is hosted on netlify 👉 [Innoloft-frontend](https://innoloft-interview.netlify.app/)
+App also demonstrates whitelabelling is working in production.
 
 ### Install
 
@@ -27,18 +28,6 @@ npm run dev
 ```
 
 Create a `.env` file as given in `.env.example`
-
-### Lint
-
-```bash
-npm run lint
-```
-
-### Typecheck
-
-```bash
-npm run typecheck
-```
 
 ### Build
 
