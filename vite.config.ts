@@ -15,5 +15,10 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ["react-quilljs"]
+  },
+  build: {
+    commonjsOptions: {
+      include: [/react-quilljs/, /node_modules/]
+    }
   }
 })
