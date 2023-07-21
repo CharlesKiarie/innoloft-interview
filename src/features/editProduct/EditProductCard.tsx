@@ -2,7 +2,8 @@ import React, { useContext, useState } from 'react'
 import { RiTrophyLine, RiDeleteBin2Line, RiCheckLine } from 'react-icons/ri'
 import { useEditProductMutation } from 'api/productAPI'
 import { useQuill } from 'react-quilljs'
-import './quill.snow.css'
+// import './quill.snow.css'
+import 'quill/dist/quill.snow.css'
 import xss from 'xss'
 import { DataContext } from 'context/DataContext';
 
@@ -12,7 +13,6 @@ export default function EditProductCard() {
 
     const { quill, quillRef } = useQuill();
     const [productState, setProductState] = useState({ ...product });
-    const [newTitle, setNewTitle] = useState(productState.productName)
     const [editProduct] = useEditProductMutation();
     const [newInnerHTML, setnewInnerHTML] = useState(productState.productDescription)
 
