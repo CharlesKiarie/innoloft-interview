@@ -1,5 +1,6 @@
 ## Getting Started
 Project is hosted on netlify 👉 [Innoloft-frontend](https://innoloft-interview.netlify.app/)
+
 App also demonstrates whitelabelling is working in production.
 
 ### Install
