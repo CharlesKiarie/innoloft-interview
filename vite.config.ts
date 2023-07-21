@@ -13,12 +13,9 @@ export default defineConfig({
     setupFiles: '.vitest/setup',
     include: ['**/test.{ts,tsx}']
   },
-  optimizeDeps: {
-    include: ["react-quilljs"]
-  },
   build: {
     commonjsOptions: {
-      include: [/react-quilljs/, /node_modules/]
+      transformMixedEsModules: true
     }
   }
 })
